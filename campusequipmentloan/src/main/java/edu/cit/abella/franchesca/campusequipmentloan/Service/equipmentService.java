@@ -13,7 +13,7 @@ public class equipmentService {
     @Autowired
     private equipmentRepo equipmentrepo;
 
-    public equipmentEntity createEquipment(String name, String type, Long serialNumber, String availability){
+    public equipmentEntity createEquipment(String name, String type, Long serialNumber, boolean availability){
         equipmentEntity equipment = new equipmentEntity();
         equipment.setName(name);
         equipment.setType(type);

@@ -18,14 +18,28 @@ public class studentEntity {
 
     private String email;
 
-    public studentEntity(Long studentNo, String name, String email) {
+
+
+    private String password;
+
+    public studentEntity(Long studentNo, String name, String email, String password) {
         this.studentNo = studentNo;
         this.name = name;
         this.email = email;
+        this.password = password;
     }
     public studentEntity() {
 
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Long getId() {
         return id;
     }
